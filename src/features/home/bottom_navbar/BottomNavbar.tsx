@@ -27,7 +27,7 @@ const BottomNavbar: React.FC = () => {
           <Image src={DoctorIcon} className="h-5 w-5" alt="Home Icon"></Image>
           <p className="text-xs">پزشکان</p>
         </div>
-        <div className="-mt-4 flex w-16 flex-col items-center justify-center text-[#084D7C]">
+        <div className="-mt-4 flex w-16 flex-col items-center justify-center text-secondary">
           <Image src={HomeIcon} className="h-5 w-5" alt="Home Icon"></Image>
           <p className="text-xs">خانه</p>
         </div>

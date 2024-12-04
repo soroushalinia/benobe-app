@@ -10,7 +10,10 @@ export default {
   theme: {
     extend: {
       colors: {
+        primary: 'var(--primary)',
+        secondary: 'var(--secondary)',
         background_primary: 'var(--background-primary)',
+        border_primary: 'var(--border-primary)',
       },
     },
   },

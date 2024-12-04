@@ -27,12 +27,12 @@ const Navbar: React.FC = () => {
           </button>
         </div>
       </div>
-      <div className="hidden sm:block lg:hidden"></div>
-      <div className="hidden lg:block">
-        <div className="flex flex-row items-center justify-between px-4 py-2 xl:px-8 xl:py-4">
+      <div className="hidden sm:block xl:hidden"></div>
+      <div className="hidden xl:block">
+        <div className="border-border_primary flex flex-row items-center justify-between border-b px-4 py-2 xl:px-8 xl:py-4">
           <div>
             <Image
-              className="h-20 w-20 xl:h-28 xl:w-28 2xl:h-32 2xl:w-32"
+              className="xl:h-28 xl:w-28 2xl:h-32 2xl:w-32"
               src={BenobeLogo}
               alt="Benobe Logo"
             ></Image>
@@ -63,11 +63,11 @@ const Navbar: React.FC = () => {
             </Link>
           </div>
           <div className="flex flex-row items-center justify-center gap-2">
-            <button className="rounded-md bg-[#2E86C1] px-3 py-2 text-white">
+            <button className="rounded-md bg-primary px-3 py-2 text-white">
               <p>برای پزشکان</p>
             </button>
             <button className="flex flex-row items-center justify-center gap-[2px] rounded-md border border-black px-2 py-2">
-              <Image className="w-4 xl:w-6" src={ProfileIcon} alt="Profile Icon"></Image>
+              <Image className="xl:w-6" src={ProfileIcon} alt="Profile Icon"></Image>
               <p className="text-md">ورود / ثبت نام</p>
             </button>
           </div>

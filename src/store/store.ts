@@ -1,10 +1,9 @@
-// src/app/store.ts
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import storyReducer from '@/features/home/stories/storySlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    stories: storyReducer,
   },
 });
 
