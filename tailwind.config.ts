@@ -10,12 +10,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: 'var(--primary-color)',
-        secondary: 'var(--secondary-color)',
-        accent: 'var(--accent-color)',
-      },
-      borderRadius: {
-        'primary-radius': 'var(--primary-radius)',
+        background_primary: 'var(--background-primary)',
       },
     },
   },

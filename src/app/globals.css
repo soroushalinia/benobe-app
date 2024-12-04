@@ -3,8 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: #2E86C1;
-  --secondary-color: #84CAF966;
-  --accent-color: #58D68D;
-  --primary-radius: 15px;
+  --background-primary: #F0F8FF;
+  --font-yekan: 'Yekan', sans-serif;
+  --font-yekan-bold: 'Yekan Bold', sans-serif;
+}
+
+
+.font-regular {
+  font-family: var(--font-yekan);
+  font-weight: 400;
+}
+
+.font-bold {
+  font-family: var(--font-yekan-bold);
+  font-weight: 700;
 }
