@@ -7,6 +7,7 @@ const initialState: StoryState = {
 };
 
 export const fetchStories = createAsyncThunk('stories/fetchStories', async () => {
+  // axios.get('https://74.64.126.434/stories')
   return [
     {
       name: 'مهناز حبیبی',

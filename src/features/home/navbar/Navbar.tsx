@@ -63,9 +63,12 @@ const Navbar: React.FC = () => {
             </Link>
           </div>
           <div className="flex flex-row items-center justify-center gap-2">
-            <button className="rounded-md bg-primary px-3 py-2 text-white">
+            <a
+              href="https://emr-benobe.ir/landing/doctors-membership"
+              className="rounded-md bg-primary px-3 py-2 text-white"
+            >
               <p>برای پزشکان</p>
-            </button>
+            </a>
             <button className="flex flex-row items-center justify-center gap-[2px] rounded-md border border-black px-2 py-2">
               <Image className="xl:w-6" src={ProfileIcon} alt="Profile Icon"></Image>
               <p className="text-md">ورود / ثبت نام</p>
