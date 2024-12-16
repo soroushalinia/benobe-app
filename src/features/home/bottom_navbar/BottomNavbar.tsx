@@ -8,7 +8,7 @@ import ProfileIcon from '@/features/home/bottom_navbar/images/profile.svg';
 
 const BottomNavbar: React.FC = () => {
   return (
-    <div className="fixed bottom-0 left-0 h-16 w-full">
+    <div className="fixed bottom-0 left-0 z-50 h-16 w-full">
       <div className="absolute inset-0 -z-10">
         <Image
           src={BackgroundVector}

@@ -2,6 +2,7 @@ import Image from 'next/image';
 import HamburgerIcon from '@/features/home/navbar/images/hamburger.svg';
 import BenobeLogo from '@/app/images/logo.png';
 import ProfileIcon from '@/features/home/navbar/images/user.svg';
+import MobileProfileIcon from '@/features/home/navbar/images/profile.svg';
 import '@/features/home/navbar/styles/style.css';
 import Link from 'next/link';
 import DoctorIcon from '@/features/home/navbar/images/doctors.svg';
@@ -21,15 +22,14 @@ const Navbar: React.FC = () => {
             alt="Benobe Logo"
             src={BenobeLogo}
           ></Image>
-          <button className="flex flex-row items-center justify-center gap-[2px] rounded-md border-[1px] border-black py-1 pl-1 pr-[2px]">
-            <Image className="w-4" src={ProfileIcon} alt="Profile Icon"></Image>
-            <p className="text-xs">ورود / ثبت نام</p>
+          <button className="">
+            <Image className="h-9 w-9" src={MobileProfileIcon} alt="Profile Icon"></Image>
           </button>
         </div>
       </div>
       <div className="hidden sm:block xl:hidden"></div>
       <div className="hidden xl:block">
-        <div className="border-border_primary flex flex-row items-center justify-between border-b px-4 py-2 xl:px-8 xl:py-4">
+        <div className="flex flex-row items-center justify-between border-b border-border_primary px-4 py-2 xl:px-8 xl:py-4">
           <div>
             <Image
               className="xl:h-28 xl:w-28 2xl:h-32 2xl:w-32"
