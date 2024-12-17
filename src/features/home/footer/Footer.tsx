@@ -19,7 +19,7 @@ import DownloadBox from './images/download.png';
 const ButtonRegular: React.FC = () => {
   return (
     <>
-      <div className="font-regular h-screen bg-background_primary sm:hidden">
+      <div className="font-regular mb-16 bg-background_primary sm:hidden">
         <div className="flex flex-col items-center justify-center gap-2 bg-[#84CAF94D] px-3">
           <Image className="h-24 w-24" src={Logo} alt="Benobe Logo"></Image>
           <p className="text-center text-sm">

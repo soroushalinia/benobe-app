@@ -11,7 +11,7 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <>
-      <div className="font-regular h-screen bg-background_primary sm:hidden">
+      <div className="font-regular bg-background_primary sm:hidden">
         <Navbar></Navbar>
         <BottomNavbar></BottomNavbar>
         <Story></Story>

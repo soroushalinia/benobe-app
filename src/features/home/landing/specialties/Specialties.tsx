@@ -48,14 +48,14 @@ const Specialties: React.FC = () => {
     },
   ];
   return (
-    <div className="flex flex-col gap-4 xl:gap-6">
+    <div className="flex flex-col gap-16">
       <div className="flex w-full flex-row justify-between">
         <p className="text-3xl font-bold">تخصص‌ها</p>
         <button className="rounded-xl bg-primary px-2 py-1 text-white">
           <p>مشاهده بیشتر</p>
         </button>
       </div>
-      <div className="flex flex-row items-center justify-between 2xl:justify-center 2xl:gap-32">
+      <div className="flex flex-row items-center justify-between 2xl:justify-center 2xl:gap-6">
         {specialtiesList.map(
           (
             item: { name: string; stat: string; image: StaticImageData; alt: string },

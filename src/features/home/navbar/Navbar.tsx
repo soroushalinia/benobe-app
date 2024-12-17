@@ -29,15 +29,11 @@ const Navbar: React.FC = () => {
       </div>
       <div className="hidden sm:block xl:hidden"></div>
       <div className="hidden xl:block">
-        <div className="flex flex-row items-center justify-between border-b border-border_primary px-4 py-2 xl:px-8 xl:py-4">
+        <div className="flex flex-row items-center justify-between border-b border-border_primary px-4 py-2 xl:px-28 xl:py-2">
           <div>
-            <Image
-              className="xl:h-28 xl:w-28 2xl:h-32 2xl:w-32"
-              src={BenobeLogo}
-              alt="Benobe Logo"
-            ></Image>
+            <Image className="xl:h-24 xl:w-24" src={BenobeLogo} alt="Benobe Logo"></Image>
           </div>
-          <div className="flex flex-row items-center justify-center gap-3 xl:gap-8 2xl:gap-16">
+          <div className="flex flex-row items-center justify-center gap-3 xl:gap-12 2xl:gap-20">
             <Link href="#" className="flex flex-row items-center justify-center">
               <p>صفحه اصلی</p>
             </Link>

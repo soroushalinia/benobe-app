@@ -89,6 +89,26 @@ export const fetchStories = createAsyncThunk('stories/fetchStories', async () =>
       imagePath: '/story/story4.png',
       live: false,
     },
+    {
+      name: 'مهناز حبیبی',
+      imagePath: '/story/story5.png',
+      live: false,
+    },
+    {
+      name: 'مهناز حبیبی',
+      imagePath: '/story/story6.png',
+      live: false,
+    },
+    {
+      name: 'مهناز حبیبی',
+      imagePath: '/story/story7.png',
+      live: false,
+    },
+    {
+      name: 'مهناز حبیبی',
+      imagePath: '/story/story8.png',
+      live: false,
+    },
   ];
 });
 

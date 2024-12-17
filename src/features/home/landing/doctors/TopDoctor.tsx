@@ -21,17 +21,17 @@ const LatestDoctor: React.FC = () => {
   if (loading) return <p>در حال بارگذاری...</p>;
   if (error) return <p>خطا: {error}</p>;
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-16">
       <div className="flex w-full flex-row justify-between">
-        <p className="text-3xl font-bold">جدیدترین پزشکان</p>
+        <p className="text-3xl font-bold">برترین پزشکان</p>
         <button className="rounded-xl bg-primary px-2 py-1 text-white">
           <p>مشاهده بیشتر</p>
         </button>
       </div>
-      <div className="flex flex-row items-center xl:justify-between 2xl:justify-center 2xl:gap-28">
+      <div className="flex flex-row items-center xl:justify-between 2xl:justify-center 2xl:gap-6">
         {doctors.map((doctor: TopDoctorProps, index: number) => (
           <div
-            className="flex flex-col items-center justify-center gap-2 rounded-3xl px-4 shadow xl:w-[200px] 2xl:w-[240px]"
+            className="flex flex-col items-center justify-center gap-2 rounded-3xl px-4 shadow xl:w-[300px] 2xl:w-[400px]"
             key={index}
           >
             <div className="flex w-full flex-row-reverse items-center gap-1 pt-2">

@@ -21,7 +21,7 @@ const Story: React.FC = () => {
   if (error) return <p>خطا: {error}</p>;
   return (
     <div className="story-list">
-      <ul className="no-scrollbar flex flex-row gap-6 overflow-x-scroll px-4 py-3 xl:gap-8 xl:px-14 xl:py-5">
+      <ul className="no-scrollbar flex flex-row gap-3 overflow-x-scroll px-4 py-3 xl:gap-5 xl:px-24 xl:py-5">
         {stories.map((story: StoryProps, index: number) => (
           <div className="relative flex flex-col items-center justify-center" key={index}>
             <div className="border-story h-16 w-16 xl:h-20 xl:w-20">

@@ -11,13 +11,13 @@ import ScanIcon from '@/features/home/landing/facilities/images/scan.svg';
 
 const Facilities: React.FC = () => {
   return (
-    <div className="flex flex-col items-center gap-4">
+    <div className="flex flex-col items-center gap-16">
       <div className="w-full text-right">
         <h1 className="text-3xl font-bold">مراکز درمانی</h1>
       </div>
       <div className="flex w-full flex-col gap-8 px-10 2xl:px-20">
-        <div className="flex w-full flex-row justify-between">
-          <div className="flex flex-col items-center justify-center rounded-b-[26px] rounded-tl-[70px] px-16 py-8 shadow">
+        <div className="flex w-full flex-row justify-center gap-6">
+          <div className="flex flex-col items-center justify-center rounded-b-[26px] rounded-tl-[70px] px-16 py-8 shadow xl:w-[275px]">
             <div className="rounded-full bg-[#418DC0CC] p-4">
               <Image src={HospitalIcon} alt="Hospital Icon"></Image>
             </div>
@@ -26,7 +26,7 @@ const Facilities: React.FC = () => {
             <br />
             <Image src={DropdownLogo} alt="Dropdown Logo"></Image>
           </div>
-          <div className="flex flex-col items-center justify-center rounded-b-[26px] rounded-tl-[70px] px-16 py-8 shadow">
+          <div className="flex flex-col items-center justify-center rounded-b-[26px] rounded-tl-[70px] px-16 py-8 shadow xl:w-[275px]">
             <div className="rounded-full bg-[#418DC0CC] p-4">
               <Image src={LabIcon} alt="Lab Icon"></Image>
             </div>
@@ -35,7 +35,7 @@ const Facilities: React.FC = () => {
             <br />
             <Image src={DropdownLogo} alt="Dropdown Logo"></Image>
           </div>
-          <div className="flex flex-col items-center justify-center rounded-b-[26px] rounded-tl-[70px] px-16 py-8 shadow">
+          <div className="flex flex-col items-center justify-center rounded-b-[26px] rounded-tl-[70px] px-16 py-8 shadow xl:w-[275px]">
             <div className="rounded-full bg-[#418DC0CC] p-4">
               <Image src={ClinicIcon} alt="Clinic Icon"></Image>
             </div>
@@ -44,7 +44,7 @@ const Facilities: React.FC = () => {
             <br />
             <Image src={DropdownLogo} alt="Dropdown Logo"></Image>
           </div>
-          <div className="flex flex-col items-center justify-center rounded-b-[26px] rounded-tl-[70px] px-16 py-8 shadow">
+          <div className="flex flex-col items-center justify-center rounded-b-[26px] rounded-tl-[70px] px-16 py-8 shadow xl:w-[275px]">
             <div className="rounded-full bg-[#418DC0CC] p-4">
               <Image src={ErIcon} alt="ER Icon"></Image>
             </div>
@@ -53,7 +53,7 @@ const Facilities: React.FC = () => {
             <br />
             <Image src={DropdownLogo} alt="Dropdown Logo"></Image>
           </div>
-          <div className="flex flex-col items-center justify-center rounded-b-[26px] rounded-tl-[70px] px-16 py-8 shadow">
+          <div className="flex flex-col items-center justify-center rounded-b-[26px] rounded-tl-[70px] px-16 py-8 shadow xl:w-[275px]">
             <div className="rounded-full bg-[#418DC0CC] p-4">
               <Image src={ScanIcon} alt="Scan Icon"></Image>
             </div>
@@ -118,7 +118,7 @@ const Facilities: React.FC = () => {
                   <p>تهران</p>
                 </div>
               </div>
-              <Image src={NextIcon} alt="NextIcon"></Image>
+              <Image className="justify-self-end" src={NextIcon} alt="NextIcon"></Image>
             </div>
           </div>
         </div>

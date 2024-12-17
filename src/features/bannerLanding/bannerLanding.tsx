@@ -13,8 +13,8 @@ const BannerLanding: React.FC = () => {
   return (
     <div className="z-0 px-2 xl:px-0">
       <div className="z-10 xl:relative">
-        <div className="bg-primary/[.3] z-20 flex h-full w-full flex-col items-center justify-center gap-2 text-black xl:absolute xl:gap-8 xl:py-10 xl:text-white">
-          <p className="text-lg font-bold xl:text-4xl">
+        <div className="bg-primary/[.3] z-20 flex h-full w-full flex-col items-center gap-2 text-black xl:absolute xl:gap-12 xl:py-32 xl:text-white">
+          <p className="text-lg font-bold xl:text-6xl">
             به‌نوبه: سامانه جامع خدمات آنلاین پزشکی و درمانی
           </p>
           <TextSwitcher texts={['پزشک', 'بیمارستان', 'کلینیک', 'تخصص']} />
@@ -23,7 +23,7 @@ const BannerLanding: React.FC = () => {
               <p className="text-sm text-primary xl:text-lg">انتخاب شهر</p>
               <Image className="h-4 w-4" src={DropdownIcon} width={14} height={14} alt="Dropdown" />
             </div>
-            <div className="px-2 text-lg text-gray-500 xl:w-[400px]">
+            <div className="px-2 text-lg text-gray-500 xl:w-[600px]">
               <input
                 className="w-full text-sm focus:outline-none xl:text-base"
                 placeholder="جست و جو ..."
@@ -37,7 +37,7 @@ const BannerLanding: React.FC = () => {
         <Image className="z-0 hidden xl:block" src={BannerImage} alt="Banner" />
       </div>
 
-      <div className="z-50 mt-5 hidden w-full justify-center rounded-2xl border border-primary xl:relative xl:-mt-16 xl:block xl:flex xl:border-none 2xl:-mt-20">
+      <div className="z-50 mt-5 hidden w-full justify-center rounded-2xl border border-primary xl:relative xl:-mt-16 xl:flex xl:border-none 2xl:-mt-28">
         <div className="flex flex-row items-center justify-center rounded-2xl bg-white px-2 py-6 shadow-xl">
           <div className="flex flex-col items-center justify-center gap-2 border-l-2 border-dashed px-2 text-center text-black xl:px-16">
             <Image className="w-6 xl:w-16" src={UserIcon} alt="User Icon" />

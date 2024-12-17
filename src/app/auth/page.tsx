@@ -6,7 +6,7 @@ import LoginImage from './images/image.png';
 export default function Auth() {
   return (
     <>
-      <div className="font-regular h-screen bg-background_primary sm:hidden">
+      <div className="font-regular bg-background_primary sm:hidden">
         <Navbar></Navbar>
       </div>
       <div className="font-regular hidden bg-background_primary sm:block xl:hidden"></div>
