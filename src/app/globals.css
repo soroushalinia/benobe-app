@@ -12,12 +12,3 @@
 }
 
 
-.font-regular {
-  font-family: var(--font-yekan);
-  font-weight: 400;
-}
-
-.font-bold {
-  font-family: var(--font-yekan-bold);
-  font-weight: 700;
-}

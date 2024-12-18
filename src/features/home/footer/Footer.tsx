@@ -19,7 +19,7 @@ import DownloadBox from './images/download.png';
 const ButtonRegular: React.FC = () => {
   return (
     <>
-      <div className="font-regular mb-16 bg-background_primary sm:hidden">
+      <div className="font-yekanBakh mb-16 bg-background_primary sm:hidden">
         <div className="flex flex-col items-center justify-center gap-2 bg-[#84CAF94D] px-3">
           <Image className="h-24 w-24" src={Logo} alt="Benobe Logo"></Image>
           <p className="text-center text-sm">
@@ -65,8 +65,7 @@ const ButtonRegular: React.FC = () => {
               </svg>
             </div>
           </div>
-          <br />
-          <div className="px-4 pb-5">
+          <div className="px-4 pb-5 pt-2">
             <Image src={DownloadBox} alt="Downloadbox"></Image>
           </div>
         </div>
@@ -74,8 +73,8 @@ const ButtonRegular: React.FC = () => {
           <p>کلیه‌ی حقوق این وبسایت متعلق به شرکت به نو به است.</p>
         </div>
       </div>
-      <div className="font-regular hidden bg-background_primary sm:block xl:hidden"></div>
-      <div className="font-regular hidden bg-background_primary xl:block">
+      <div className="font-yekanBakh hidden bg-background_primary sm:block xl:hidden"></div>
+      <div className="font-yekanBakh hidden bg-background_primary xl:block">
         <div className="flex flex-col bg-[#84CAF94D] px-24 py-6">
           <div className="space-between flex w-full flex-row gap-28">
             <div className="flex w-2/4 flex-col gap-3">

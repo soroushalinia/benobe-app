@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import ShapeVector from './images/shape.svg';
+import AnimatedReview from './switch';
 
 const Reviews: React.FC = () => {
   return (
@@ -12,16 +13,11 @@ const Reviews: React.FC = () => {
       </div>
       <div className="w-full">
         <div className="relative">
-          <Image className="w-full" src={ShapeVector} alt="Shape vector"></Image>
+          {/* <Image className="w-full" src={ShapeVector} alt="Shape vector"></Image> */}
+          <AnimatedReview></AnimatedReview>
           <div className="pointer-events-auto absolute inset-0 bg-transparent"></div>
         </div>
       </div>
-      {/* <div className="relative">
-        <div className="z-20">
-          <Image src="/reviews/image1.png" alt="Profile" width={60} height={60}></Image>
-        </div>
-        <Image className="absolute top-0 w-[280px]" src={ShapeVector} alt="Shape Vector"></Image>
-      </div> */}
     </div>
   );
 };

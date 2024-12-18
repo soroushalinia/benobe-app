@@ -27,7 +27,7 @@ const TextSwitcher: React.FC<TextSwitcherProps> = ({ texts, interval = 1500 }) =
     <div className="flex flex-row items-center justify-center gap-2 text-lg text-black xl:gap-4 xl:text-4xl xl:text-white">
       <p>نام</p>
       <div
-        className={`font-bold text-primary transition-opacity duration-300 ${fadeState === 'fadeIn' ? 'animate-fadeIn' : 'animate-fadeOut'}`}
+        className={`w-[125px] text-center font-bold text-primary transition-opacity duration-300 ${fadeState === 'fadeIn' ? 'animate-fadeIn' : 'animate-fadeOut'}`}
       >
         {texts[currentIndex]}
       </div>

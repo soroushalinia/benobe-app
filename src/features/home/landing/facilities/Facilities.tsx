@@ -63,11 +63,11 @@ const Facilities: React.FC = () => {
             <Image src={DropdownLogo} alt="Dropdown Logo"></Image>
           </div>
         </div>
-        <div className="">
-          <div className="flex w-full flex-col items-center justify-center gap-2 rounded-b-[26px] rounded-tl-[70px] px-16 py-4 shadow">
+        <div className="px-10">
+          <div className="flex w-full flex-col items-center justify-center gap-4 rounded-b-[26px] rounded-tl-[70px] px-4 py-4 shadow">
             <div className="flex w-full flex-row items-center justify-between">
-              <p className="text-xl">برترین بیمارستان ها</p>
-              <p className="text-primary">مشاهده بیشتر</p>
+              <p className="text-2xl">برترین بیمارستان ها</p>
+              <p className="px-4 text-primary">مشاهده بیشتر</p>
             </div>
             <div className="flex flex-row gap-4">
               <div className="flex flex-col items-center gap-2 rounded-[20px] bg-[#84CAF966] px-12 py-2">

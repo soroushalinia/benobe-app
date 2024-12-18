@@ -63,7 +63,7 @@ const Specialties: React.FC = () => {
           ) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center gap-1 rounded-lg py-3 shadow xl:w-[400px]"
+              className="flex flex-col items-center justify-center gap-1 rounded-2xl py-3 shadow xl:w-[400px]"
             >
               <div className="rounded-full bg-[#84CAF980] p-4">
                 <Image

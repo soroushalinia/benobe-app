@@ -1,7 +1,7 @@
 'use client';
 
 import { AppDispatch, RootState } from '@/store/store';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchTopDoctors } from './topDoctorSlice';
 import Image from 'next/image';
@@ -14,12 +14,26 @@ const LatestDoctor: React.FC = () => {
 
   const { doctors, loading, error } = useSelector((state: RootState) => state.topDoctors);
 
+  const [currentPage, setCurrentPage] = useState(0);
+  const itemsPerPage = 5;
+
   useEffect(() => {
     dispatch(fetchTopDoctors());
   }, [dispatch]);
 
   if (loading) return <p>در حال بارگذاری...</p>;
   if (error) return <p>خطا: {error}</p>;
+
+  const startIndex = currentPage * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentDoctors = doctors.slice(startIndex, endIndex);
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+  };
+
+  const totalPages = Math.ceil(doctors.length / itemsPerPage);
+
   return (
     <div className="flex flex-col gap-16">
       <div className="flex w-full flex-row justify-between">
@@ -29,7 +43,7 @@ const LatestDoctor: React.FC = () => {
         </button>
       </div>
       <div className="flex flex-row items-center xl:justify-between 2xl:justify-center 2xl:gap-6">
-        {doctors.map((doctor: TopDoctorProps, index: number) => (
+        {currentDoctors.map((doctor: TopDoctorProps, index: number) => (
           <div
             className="flex flex-col items-center justify-center gap-2 rounded-3xl px-4 shadow xl:w-[300px] 2xl:w-[400px]"
             key={index}
@@ -40,7 +54,7 @@ const LatestDoctor: React.FC = () => {
             </div>
             <Image src={doctor.imagePath} alt="Doctor" width={90} height={90}></Image>
             <p className="font-bold">{doctor.name}</p>
-            <p className="">{doctor.speciality}</p>
+            <p>{doctor.speciality}</p>
             <div className="flex flex-row items-center justify-center">
               <Image src={LocationIcon} alt="Location Icon"></Image>
               <p className="text-primary">{doctor.location}</p>
@@ -52,6 +66,35 @@ const LatestDoctor: React.FC = () => {
             <button className="mb-3 w-full rounded-2xl bg-primary py-2 text-white">
               <p>دریافت نوبت</p>
             </button>
+          </div>
+        ))}
+      </div>
+
+      <div className="flex items-center justify-center gap-5">
+        {Array.from({ length: totalPages }).map((_, index) => (
+          <div key={index} onClick={() => handlePageChange(index)} className="cursor-pointer">
+            {currentPage === index ? (
+              <svg
+                width="23"
+                height="23"
+                viewBox="0 0 23 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="11.5" cy="11.5" r="8.5" fill="#22C0FF" />
+                <circle cx="11.5" cy="11.5" r="11" stroke="#22C0FF" />
+              </svg>
+            ) : (
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="7.5" cy="7.5" r="7.5" fill="#2E86C1" />
+              </svg>
+            )}
           </div>
         ))}
       </div>
