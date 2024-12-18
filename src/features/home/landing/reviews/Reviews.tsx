@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import ShapeVector from './images/shape.svg';
+// import Image from 'next/image';
+// import ShapeVector from './images/shape.svg';
 import AnimatedReview from './switch';
 
 const Reviews: React.FC = () => {
