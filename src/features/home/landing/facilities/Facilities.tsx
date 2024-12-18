@@ -71,7 +71,7 @@ const Facilities: React.FC = () => {
             </div>
             <div className="flex flex-row gap-4">
               <div className="flex flex-col items-center gap-2 rounded-[20px] bg-[#84CAF966] px-12 py-2">
-                <div className="rounded-full bg-white xl:h-14 xl:w-14 2xl:h-20 2xl:w-20"></div>
+                <div className="rounded-full bg-white xl:h-14 xl:w-14 2xl:h-28 2xl:w-28"></div>
                 <p className="text-center text-sm">درمانگاه سعدی</p>
                 <div className="flex flex-row items-center justify-center">
                   <Image src={LocationIcon} alt="Location Icon"></Image>
@@ -79,7 +79,7 @@ const Facilities: React.FC = () => {
                 </div>
               </div>
               <div className="flex flex-col items-center gap-2 rounded-[20px] bg-[#84CAF966] px-12 py-2">
-                <div className="rounded-full bg-white xl:h-14 xl:w-14 2xl:h-20 2xl:w-20"></div>
+                <div className="rounded-full bg-white xl:h-14 xl:w-14 2xl:h-28 2xl:w-28"></div>
                 <p className="text-sm">درمانگاه سعدی</p>
                 <div className="flex flex-row items-center justify-center">
                   <Image src={LocationIcon} alt="Location Icon"></Image>
@@ -87,7 +87,7 @@ const Facilities: React.FC = () => {
                 </div>
               </div>
               <div className="flex flex-col items-center gap-2 rounded-[20px] bg-[#84CAF966] px-12 py-2">
-                <div className="rounded-full bg-white xl:h-14 xl:w-14 2xl:h-20 2xl:w-20"></div>
+                <div className="rounded-full bg-white xl:h-14 xl:w-14 2xl:h-28 2xl:w-28"></div>
                 <p className="text-sm">درمانگاه سعدی</p>
                 <div className="flex flex-row items-center justify-center">
                   <Image src={LocationIcon} alt="Location Icon"></Image>
@@ -95,7 +95,7 @@ const Facilities: React.FC = () => {
                 </div>
               </div>
               <div className="flex flex-col items-center gap-2 rounded-[20px] bg-[#84CAF966] px-12 py-2">
-                <div className="rounded-full bg-white xl:h-14 xl:w-14 2xl:h-20 2xl:w-20"></div>
+                <div className="rounded-full bg-white xl:h-14 xl:w-14 2xl:h-28 2xl:w-28"></div>
                 <p className="text-sm">درمانگاه سعدی</p>
                 <div className="flex flex-row items-center justify-center">
                   <Image src={LocationIcon} alt="Location Icon"></Image>
@@ -103,7 +103,7 @@ const Facilities: React.FC = () => {
                 </div>
               </div>
               <div className="flex flex-col items-center gap-2 rounded-[20px] bg-[#84CAF966] px-12 py-2">
-                <div className="h-20 w-20 rounded-full bg-white"></div>
+                <div className="h-28 w-28 rounded-full bg-white"></div>
                 <p className="text-sm">درمانگاه سعدی</p>
                 <div className="flex flex-row items-center justify-center">
                   <Image src={LocationIcon} alt="Location Icon"></Image>
@@ -111,7 +111,7 @@ const Facilities: React.FC = () => {
                 </div>
               </div>
               <div className="flex flex-col items-center gap-2 rounded-[20px] bg-[#84CAF966] px-12 py-2">
-                <div className="h-20 w-20 rounded-full bg-white"></div>
+                <div className="h-28 w-28 rounded-full bg-white"></div>
                 <p className="text-sm">درمانگاه سعدی</p>
                 <div className="flex flex-row items-center justify-center">
                   <Image src={LocationIcon} alt="Location Icon"></Image>
