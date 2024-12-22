@@ -4,9 +4,9 @@ import Navbar from '@/features/home/navbar/Navbar';
 import Story from '@/features/home/stories/Story';
 import Landing from '@/features/home/landing/Landing';
 import Footer from '@/features/home/footer/Footer';
-import MobileBanner from '@/app/images/banner.svg';
 import Stat from '@/app/images/stats.svg';
 import Image from 'next/image';
+import MobileLanding from '@/features/home/mobile_landing/MobileLanding';
 
 export default function Home() {
   return (
@@ -16,13 +16,11 @@ export default function Home() {
         <BottomNavbar></BottomNavbar>
         <Story></Story>
         <BannerLanding></BannerLanding>
+
         <div className="flex flex-col items-center bg-[#f6fbff] py-4">
           <Image src={Stat} alt="Statistics"></Image>
-          <div className="relative">
-            <Image src={MobileBanner} alt="Mobile Banner"></Image>
-            <div className="pointer-events-auto absolute inset-0 bg-transparent"></div>
-          </div>
         </div>
+        <MobileLanding></MobileLanding>
         <Footer></Footer>
       </div>
       <div className="font-yekanBakh hidden bg-background_primary sm:block xl:hidden"></div>

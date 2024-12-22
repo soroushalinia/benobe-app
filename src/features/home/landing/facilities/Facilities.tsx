@@ -8,6 +8,7 @@ import LabIcon from '@/features/home/landing/facilities/images/lab.svg';
 import ClinicIcon from '@/features/home/landing/facilities/images/clinic.svg';
 import ErIcon from '@/features/home/landing/facilities/images/er.svg';
 import ScanIcon from '@/features/home/landing/facilities/images/scan.svg';
+import Template from './template.svg';
 
 const Facilities: React.FC = () => {
   return (
@@ -15,7 +16,10 @@ const Facilities: React.FC = () => {
       <div className="w-full text-right">
         <h1 className="text-3xl font-bold">مراکز درمانی</h1>
       </div>
-      <div className="flex w-full flex-col gap-8 px-10 2xl:px-20">
+      <div className="flex w-full flex-row items-center justify-center">
+        <Image src={Template} alt="Template"></Image>
+      </div>
+      <div className="hidden w-full flex-col gap-8 px-10 2xl:px-20">
         <div className="flex w-full flex-row justify-center gap-6">
           <div className="flex flex-col items-center justify-center rounded-b-[26px] rounded-tl-[70px] px-16 py-8 shadow xl:w-[275px]">
             <div className="rounded-full bg-[#418DC0CC] p-4">

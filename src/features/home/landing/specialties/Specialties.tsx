@@ -55,7 +55,7 @@ const Specialties: React.FC = () => {
           <p>مشاهده بیشتر</p>
         </button>
       </div>
-      <div className="flex flex-row items-center justify-between 2xl:justify-center 2xl:gap-6">
+      <div className="flex flex-row items-center justify-between xl:gap-8 2xl:justify-center">
         {specialtiesList.map(
           (
             item: { name: string; stat: string; image: StaticImageData; alt: string },

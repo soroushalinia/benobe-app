@@ -42,7 +42,7 @@ const LatestDoctor: React.FC = () => {
           <p>مشاهده بیشتر</p>
         </button>
       </div>
-      <div className="flex flex-row items-center xl:justify-between 2xl:justify-center 2xl:gap-6">
+      <div className="flex flex-row items-center xl:justify-between xl:gap-8 2xl:justify-center">
         {currentDoctors.map((doctor: TopDoctorProps, index: number) => (
           <div
             className="flex flex-col items-center justify-center gap-2 rounded-3xl px-4 shadow xl:w-[300px] 2xl:w-[400px]"

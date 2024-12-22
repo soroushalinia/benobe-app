@@ -14,13 +14,13 @@ const BannerLanding: React.FC = () => {
     <div className="z-0 px-2 xl:px-0">
       <div className="z-10 xl:relative">
         <div className="bg-primary/[.3] z-20 flex h-full w-full flex-col items-center gap-2 text-black xl:absolute xl:gap-12 xl:py-32 xl:text-white">
-          <p className="text-lg font-bold xl:text-6xl">
+          <p className="text-center text-lg font-bold xl:text-6xl">
             به‌نوبه: سامانه جامع خدمات آنلاین پزشکی و درمانی
           </p>
           <TextSwitcher texts={['پزشک', 'بیمارستان', 'کلینیک', 'تخصص']} />
-          <div className="flex flex-row items-center justify-between rounded-2xl border border-primary bg-white px-1 py-2 xl:border-none xl:px-3 xl:py-4">
-            <div className="flex flex-row items-center justify-center gap-2 border-l-2 px-2">
-              <p className="text-sm text-primary xl:text-lg">انتخاب شهر</p>
+          <div className="flex flex-row items-center justify-between rounded-2xl border border-primary bg-white px-2 py-2 xl:border-none xl:px-3 xl:py-4">
+            <div className="flex flex-row items-center justify-center gap-1 border-l-2 px-2 xl:gap-2">
+              <p className="text-center text-sm text-primary xl:text-lg">انتخاب شهر</p>
               <Image className="h-4 w-4" src={DropdownIcon} width={14} height={14} alt="Dropdown" />
             </div>
             <div className="px-2 text-lg text-gray-500 xl:w-[600px]">
