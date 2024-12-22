@@ -36,8 +36,8 @@ const Doctor: React.FC = () => {
       <div className="flex flex-col">
         <div className="flex flex-col items-center justify-center p-2">
           <h2 className="w-full">نوبت ویزیت حضوری</h2>
-          <div className="flex flex-row w-full justify-center items-center"></div>
-          <div className="flex flex-row w-full justify-between items-center"></div>
+          <div className="flex w-full flex-row items-center justify-center"></div>
+          <div className="flex w-full flex-row items-center justify-between"></div>
           <button className="p-4">
             <p>دریافت نوبت</p>
           </button>

@@ -11,7 +11,7 @@ const Reviews: React.FC = () => {
           <p>مشاهده بیشتر</p>
         </button>
       </div>
-      <div className="w-full flex flex-row justify-center">
+      <div className="flex w-full flex-row justify-center">
         <div className="relative">
           {/* <Image className="w-full" src={ShapeVector} alt="Shape vector"></Image> */}
           <AnimatedReview></AnimatedReview>
