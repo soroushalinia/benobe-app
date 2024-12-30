@@ -7,6 +7,9 @@ import Reserve from './images/reserve.svg';
 
 import Image from 'next/image';
 import Footer from '@/features/home/footer/Footer';
+import Tablet from './images/profile_tablet.svg';
+import footer from '../../../features/home/footer/images/tablet.svg';
+import navlogo from './images/navlogo.svg';
 
 const DoctorProfile: React.FC = () => {
   return (
@@ -22,7 +25,35 @@ const DoctorProfile: React.FC = () => {
         <BottomNavbar></BottomNavbar>
         <Footer></Footer>
       </div>
-      <div className="font-yekanBakh hidden bg-background_primary sm:block xl:hidden"></div>
+      <div className="font-yekanBakh relative hidden bg-background_primary sm:block lg:hidden">
+        <div className="w-full px-6 pb-4 pt-2 shadow-xl">
+          <Image className="w-full" src={navlogo}></Image>
+        </div>
+        <br />
+        <br />
+        <div className="flex flex-row justify-center px-8">
+          <Image className="w-full" src={Tablet}></Image>
+        </div>
+        <div className="mt-10 bg-[#84CAF94D] px-20 pb-10 pt-5 lg:px-40">
+          <Image src={footer} className="w-full"></Image>
+        </div>
+        <div className="absolute inset-0 select-none bg-transparent" />
+      </div>
+      <div className="font-yekanBakh relative hidden bg-background_primary lg:block xl:hidden">
+        <div className="w-full px-6 pb-4 pt-2 shadow-xl">
+          <Image className="w-full" src={navlogo}></Image>
+        </div>
+        <br />
+        <br />
+        <div className="flex flex-row justify-center px-8">
+          <Image className="w-full" src={Tablet}></Image>
+        </div>
+        <div className="mt-10 bg-[#84CAF94D] px-20 pb-10 pt-5 lg:px-40">
+          <Image src={footer} className="w-full"></Image>
+        </div>
+
+        <div className="absolute inset-0 select-none bg-transparent" />
+      </div>
       <div className="font-yekanBakh hidden bg-background_primary xl:block">
         <div className="flex flex-col">
           <NavbarAlt></NavbarAlt>

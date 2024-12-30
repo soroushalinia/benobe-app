@@ -14,7 +14,9 @@ import RayaneOrgLogo from './images/rayane.png';
 import TelegramLogo from './images/telegram.png';
 import WhatsappLogo from './images/whatsapp.png';
 import AparatLogo from './images/aparat.png';
-import DownloadBox from './images/download.png';
+// import DownloadBox from './images/download.png';
+import Tablet from './images/tablet.svg';
+import buttons from './buttons.svg';
 
 const ButtonRegular: React.FC = () => {
   return (
@@ -26,54 +28,25 @@ const ButtonRegular: React.FC = () => {
             به نوبه سامانه جامع خدمات سلامت دیجیتال با بهره وری از بهترین پزشکان و مراکز درمان کل
             کشور{' '}
           </p>
-          <div className="flex w-full flex-col items-center justify-center gap-1 px-4">
-            <div className="w-full rounded-lg bg-[#2E86C14D] px-10 py-2 text-center">
-              <p>برای پزشکان</p>
-            </div>
-            <div className="flex w-full flex-row items-center justify-center gap-2 rounded-lg bg-[#2E86C14D] px-10 py-2 text-center">
-              <p>برای بیماران</p>
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M2.91667 5.25L7 8.75L11.0833 5.25"
-                  stroke="black"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-            <div className="flex w-full flex-row items-center justify-center gap-2 rounded-lg bg-[#2E86C14D] px-10 py-2 text-center">
-              <p>به نو به</p>
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M2.91667 5.25L7 8.75L11.0833 5.25"
-                  stroke="black"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-          </div>
+          <div className="flex w-full flex-col items-center justify-center gap-1 px-4"></div>
           <div className="px-4 pb-5 pt-2">
-            <Image src={DownloadBox} alt="Downloadbox"></Image>
+            <Image src={buttons}></Image>
           </div>
         </div>
         <div className="flex flex-col bg-[#2E86C166] p-3 text-center text-sm">
           <p>کلیه‌ی حقوق این وبسایت متعلق به شرکت به نو به است.</p>
         </div>
       </div>
-      <div className="font-yekanBakh hidden bg-background_primary sm:block xl:hidden"></div>
+      <div className="font-yekanBakh hidden bg-background_primary sm:block lg:hidden">
+        <div className="flex w-full flex-row justify-center bg-[#84CAF9]">
+          <Image className="w-full" src={Tablet}></Image>
+        </div>
+      </div>
+      <div className="font-yekanBakh hidden bg-background_primary lg:block xl:hidden">
+        <div className="flex w-full flex-row justify-center">
+          <Image className="w-full" src={Tablet}></Image>
+        </div>
+      </div>
       <div className="font-yekanBakh hidden bg-background_primary xl:block">
         <div className="flex flex-col bg-[#84CAF94D] px-24 py-6">
           <div className="space-between flex w-full flex-row gap-28">
