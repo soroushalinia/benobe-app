@@ -61,29 +61,29 @@ const DoctorProfile: React.FC = () => {
       </div>
       <div className="font-yekanBakh relative hidden bg-background_primary sm:block lg:hidden">
         <div className="w-full px-6 pb-4 pt-2 shadow-xl">
-          <Image className="w-full" src={navlogo}></Image>
+          <Image className="w-full" src={navlogo} alt="image"></Image>
         </div>
         <br />
         <br />
         <div className="flex flex-row justify-center px-8">
-          <Image className="w-full" src={Tablet}></Image>
+          <Image className="w-full" src={Tablet} alt="image"></Image>
         </div>
         <div className="mt-10 bg-[#84CAF94D] px-20 pb-10 pt-5 lg:px-40">
-          <Image src={footer} className="w-full"></Image>
+          <Image src={footer} className="w-full" alt="image"></Image>
         </div>
         <div className="absolute inset-0 select-none bg-transparent" />
       </div>
       <div className="font-yekanBakh relative hidden bg-background_primary lg:block xl:hidden">
         <div className="w-full px-6 pb-4 pt-2 shadow-xl">
-          <Image className="w-full" src={navlogo} />
+          <Image className="w-full" src={navlogo} alt="image" />
         </div>
         <br />
         <br />
         <div className="flex flex-row justify-center px-8">
-          <Image className="w-full" src={Tablet} />
+          <Image className="w-full" src={Tablet} alt="image" />
         </div>
         <div className="mt-10 bg-[#84CAF94D] px-20 pb-10 pt-5 lg:px-40">
-          <Image src={footer} className="w-full"></Image>
+          <Image src={footer} className="w-full" alt="image"></Image>
         </div>
 
         <div className="absolute inset-0 select-none bg-transparent" />

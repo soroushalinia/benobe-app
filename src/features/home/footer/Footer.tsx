@@ -30,7 +30,7 @@ const ButtonRegular: React.FC = () => {
           </p>
           <div className="flex w-full flex-col items-center justify-center gap-1 px-4"></div>
           <div className="px-4 pb-5 pt-2">
-            <Image src={buttons}></Image>
+            <Image src={buttons} alt="image"></Image>
           </div>
         </div>
         <div className="flex flex-col bg-[#2E86C166] p-3 text-center text-sm">
@@ -39,12 +39,12 @@ const ButtonRegular: React.FC = () => {
       </div>
       <div className="font-yekanBakh hidden bg-background_primary sm:block lg:hidden">
         <div className="flex w-full flex-row justify-center bg-[#84CAF9]">
-          <Image className="w-full" src={Tablet}></Image>
+          <Image className="w-full" src={Tablet} alt="image"></Image>
         </div>
       </div>
       <div className="font-yekanBakh hidden bg-background_primary lg:block xl:hidden">
         <div className="flex w-full flex-row justify-center">
-          <Image className="w-full" src={Tablet}></Image>
+          <Image className="w-full" src={Tablet} alt="image"></Image>
         </div>
       </div>
       <div className="font-yekanBakh hidden bg-background_primary xl:block">
