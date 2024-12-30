@@ -37,15 +37,15 @@ export default function Home() {
           <div className="absolute inset-0 select-none bg-transparent" />
         </div>
         <div className="relative flex w-full flex-col items-center justify-center">
-          <Image className="w-full py-2" src={story1}></Image>
+          <Image className="w-full py-2" src={story1} alt="image"></Image>
           <br />
           <br />
-          <Image className="w-full px-10" src={story2}></Image>
+          <Image className="w-full px-10" src={story2} alt="image"></Image>
           <BannerTablet></BannerTablet>
           <br />
           <br />
           <div className="mt-10 bg-[#84CAF94D] px-20 pb-10 pt-5 lg:px-40">
-            <Image src={footer} className="w-full"></Image>
+            <Image src={footer} className="w-full" alt="image"></Image>
           </div>
           <div className="absolute inset-0 select-none bg-transparent" />
         </div>
@@ -57,13 +57,13 @@ export default function Home() {
           <div className="absolute inset-0 select-none bg-transparent" />
         </div>
         <div className="relative flex w-full flex-col items-center justify-center">
-          <Image className="w-full py-3 pr-8" src={story1}></Image>
+          <Image className="w-full py-3 pr-8" src={story1} alt="image"></Image>
           <br />
-          <Image className="w-full p-10 lg:p-20" src={story2}></Image>
+          <Image className="w-full p-10 lg:p-20" src={story2} alt="image"></Image>
           <BannerTablet></BannerTablet>
           <br />
           <div className="mt-10 bg-[#84CAF94D] px-20 pb-10 pt-5 lg:px-40">
-            <Image src={footer} className="w-full"></Image>
+            <Image src={footer} className="w-full" alt="image"></Image>
           </div>
           <div className="absolute inset-0 select-none bg-transparent" />
         </div>
