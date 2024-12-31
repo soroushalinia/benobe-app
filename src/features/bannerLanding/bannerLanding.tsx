@@ -37,7 +37,7 @@ const BannerLanding: React.FC = () => {
         <Image className="z-0 hidden xl:block" src={BannerImage} alt="Banner" />
       </div>
 
-      <div className="z-50 mt-5 hidden w-full justify-center rounded-2xl border border-primary xl:relative xl:-mt-16 xl:flex xl:border-none 2xl:-mt-28">
+      <div className="z-50 mt-5 hidden w-full justify-center rounded-2xl border border-primary xl:relative xl:-mt-20 xl:flex xl:border-none 2xl:-mt-24">
         <div className="flex flex-row items-center justify-center rounded-2xl bg-white px-2 py-6 shadow-xl">
           <div className="flex flex-col items-center justify-center gap-2 border-l-2 border-dashed px-2 text-center text-black xl:px-16">
             <Image className="w-6 xl:w-16" src={UserIcon} alt="User Icon" />

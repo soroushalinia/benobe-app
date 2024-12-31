@@ -5,6 +5,7 @@ import DentistIcon from '@/features/home/landing/specialties/images/teeth.png';
 import EyeIcon from '@/features/home/landing/specialties/images/eyes.png';
 import HeartIcon from '@/features/home/landing/specialties/images/heart.png';
 import ArrowIcon from '@/features/home/landing/specialties/images/arrow.svg';
+import Template from './images/template.svg';
 import Image, { StaticImageData } from 'next/image';
 import './style.css';
 
@@ -55,7 +56,7 @@ const Specialties: React.FC = () => {
           <p>مشاهده بیشتر</p>
         </button>
       </div>
-      <div className="flex flex-row items-center justify-between xl:gap-8 2xl:justify-center">
+      <div className="hidden flex-row items-center justify-between xl:gap-8 2xl:justify-center">
         {specialtiesList.map(
           (
             item: { name: string; stat: string; image: StaticImageData; alt: string },
@@ -82,6 +83,7 @@ const Specialties: React.FC = () => {
           ),
         )}
       </div>
+      <Image className="w-full" src={Template} alt="Specailty card template"></Image>
     </div>
   );
 };

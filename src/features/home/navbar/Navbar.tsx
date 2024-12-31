@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import HamburgerIcon from '@/features/home/navbar/images/hamburger.svg';
 import BenobeLogo from '@/app/images/logo.png';
@@ -10,13 +11,40 @@ import LocationsIcon from '@/features/home/navbar/images/locations.svg';
 import ConsultIcon from '@/features/home/navbar/images/consult.svg';
 import MagazineIcon from '@/features/home/navbar/images/magazine.svg';
 import ShopIcon from '@/features/home/navbar/images/shop.svg';
+import menu from './images/menu.svg';
+import close from './images/close.svg';
+import menudl from './images/menudl.svg';
+import { useState } from 'react';
 
 const Navbar: React.FC = () => {
+  const [menuActive, setMenuActive] = useState<boolean>(false);
+  const toggleMenu = () => {
+    setMenuActive((prev) => !prev);
+  };
   return (
     <>
-      <div className="sm:hidden">
+      <div className="relative sm:hidden">
+        <div className={`absolute right-0 top-0 z-[100] ${menuActive ? 'hidden' : 'block'}`}>
+          <div className="z-50 flex h-screen w-[205px] flex-col items-center justify-between bg-[#e3f3ff] pt-10">
+            <Image src={menu} alt="Menu"></Image>
+            <div className="flex flex-col items-center justify-center pb-4">
+              <div className="flex w-full flex-row-reverse pb-2 pl-4">
+                <button onClick={toggleMenu}>
+                  <Image src={close} alt="Close"></Image>
+                </button>
+              </div>
+              <div className="w-full">
+                <Image className="w-full" alt="Menu Download Button" src={menudl}></Image>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="nav-border relative flex items-center justify-between px-3 pb-2 pt-8">
-          <Image src={HamburgerIcon} alt="Hamburger Menu Icon"></Image>
+          <div className="relative">
+            <button onClick={toggleMenu}>
+              <Image src={HamburgerIcon} alt="Hamburger Menu Icon"></Image>
+            </button>
+          </div>
           <Image
             className="absolute left-1/2 h-16 w-16 -translate-x-1/2 transform"
             alt="Benobe Logo"
@@ -34,7 +62,7 @@ const Navbar: React.FC = () => {
             <Image className="xl:h-24 xl:w-24" src={BenobeLogo} alt="Benobe Logo"></Image>
           </div>
           <div className="flex flex-row items-center justify-center gap-3 xl:gap-12 2xl:gap-20">
-            <Link href="#" className="flex flex-row items-center justify-center">
+            <Link href="#" className="flex flex-row items-center justify-center text-primary">
               <p>صفحه اصلی</p>
             </Link>
             <Link href="#" className="flex flex-row items-center justify-center gap-2 xl:gap-3">
