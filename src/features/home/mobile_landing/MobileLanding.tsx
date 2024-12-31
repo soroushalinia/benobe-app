@@ -31,7 +31,7 @@ const MobileLanding: React.FC = () => {
             <p>مشاهده بیشتر</p>
           </button>
         </div>
-        <div className="flex flex-row overflow-x-scroll">
+        <div className="scrollbar-hide flex flex-row overflow-x-scroll">
           <Image className="w-[1000px]" src={Profile1} alt="Profile1"></Image>
           <Image className="" src={Profile2} alt="Profile2"></Image>
           <Image className="" src={Profile3} alt="Profile3"></Image>
@@ -45,7 +45,7 @@ const MobileLanding: React.FC = () => {
             <p>مشاهده بیشتر</p>
           </button>
         </div>
-        <div className="flex flex-row gap-4 overflow-x-scroll px-2">
+        <div className="scrollbar-hide flex flex-row gap-4 overflow-x-scroll px-2">
           <Image width={400} height={400} className="" src={Heart} alt="Profile1"></Image>
           <Image className="" src={Eye} alt="Profile2"></Image>
           <Image className="" src={Tooth} alt="Profile3"></Image>
@@ -61,7 +61,7 @@ const MobileLanding: React.FC = () => {
             <p>مشاهده بیشتر</p>
           </button>
         </div>
-        <div className="flex flex-row overflow-x-scroll">
+        <div className="scrollbar-hide flex flex-row overflow-x-scroll">
           <Image className="w-[1000px]" src={Facilities} alt="Profile1"></Image>
         </div>
       </div>
@@ -72,7 +72,7 @@ const MobileLanding: React.FC = () => {
             <p>مشاهده بیشتر</p>
           </button>
         </div>
-        <div className="flex flex-row overflow-x-scroll">
+        <div className="scrollbar-hide flex flex-row overflow-x-scroll">
           <Image className="" src={CProfile1} alt="Profile1"></Image>
           <Image className="" src={CProfile2} alt="Profile2"></Image>
           <Image className="" src={CProfile3} alt="Profile3"></Image>
@@ -86,7 +86,7 @@ const MobileLanding: React.FC = () => {
             <p>مشاهده بیشتر</p>
           </button>
         </div>
-        <div className="flex flex-row gap-4 overflow-x-scroll px-2">
+        <div className="scrollbar-hide flex flex-row gap-4 overflow-x-scroll px-2">
           <Image className="" src={Mag} alt="Profile1"></Image>
           <Image className="" src={Mag} alt="Profile2"></Image>
           <Image className="" src={Mag} alt="Profile3"></Image>

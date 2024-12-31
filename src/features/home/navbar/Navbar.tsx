@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
   return (
     <>
       <div className="relative sm:hidden">
-        <div className={`absolute right-0 top-0 z-[100] ${menuActive ? 'hidden' : 'block'}`}>
+        <div className={`absolute right-0 top-0 z-[100] ${menuActive ? 'block' : 'hidden'}`}>
           <div className="z-50 flex h-screen w-[205px] flex-col items-center justify-between bg-[#e3f3ff] pt-10">
             <Image src={menu} alt="Menu"></Image>
             <div className="flex flex-col items-center justify-center pb-4">
