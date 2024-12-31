@@ -3,14 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --primary: #2E86C1;
-  --secondary: #084D7C;
-  --background-primary: #F0F8FF;
-  --border-primary: #3333334D;
+  --primary: #2e86c1;
+  --secondary: #084d7c;
+  --background-primary: #f0f8ff;
+  --border-primary: #3333334d;
   --font-yekan: 'Yekan', sans-serif;
   --font-yekan-bold: 'Yekan Bold', sans-serif;
 }
-
 
 .scrollbar-hide {
   -ms-overflow-style: none; /* IE and Edge */
@@ -19,4 +18,20 @@
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none; /* Chrome, Safari, and Opera */
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-shadow-sm {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.text-shadow-lg {
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.text-shadow-2xl {
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
 }
